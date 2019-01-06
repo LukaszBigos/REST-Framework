@@ -136,14 +136,21 @@ option:checked {
   border: 1px solid #aaa;
   border-radius: 7px;
   padding: 5px;
-  min-height: 10vh;
   background-color: #fcf8f8;
+  min-height: 10vh;
+  white-space: pre-wrap;
+  overflow: overlay;
+}
+
+/* pre {
+  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-pre {
+code {
+  word-wrap: break-word;
   overflow-wrap: break-word;
-}
+} */
 
 @media (max-width: 568px) {
   header {

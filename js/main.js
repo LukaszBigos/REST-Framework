@@ -13,7 +13,6 @@ const getData = (e) => {
     requestInfo.value = `content of response.${e.target.value}:`;
   })
   .catch(err => console.log(err));
-  // http.showFetchDetails();
 };
 
 type.addEventListener('change', getData);

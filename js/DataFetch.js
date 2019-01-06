@@ -8,12 +8,12 @@
     switch(type) {
       case 'json': {
         const rawData = await res.json();
-        data = JSON.stringify(rawData);
+        data = JSON.stringify(rawData,  null, "\t");
         break;
       }
   
       case 'xml': {
-        data = await res.text();
+        data = await res.text(); // await doesn't support xml
         break;
       }
   
@@ -21,15 +21,7 @@
         return;
       }
     }
-    // const detailsInput = document.querySelector('.request-details');
-    // detailsInput.value = `${res.status} ${res.url}`;
 
     return data;
-  };
-
-  // showFetchDetails() {
-  //   const detailsInput = document.querySelector('.request-details');
-  //   detailsInput.value = res;
-  // };
-
+  }
 }

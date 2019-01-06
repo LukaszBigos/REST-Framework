@@ -1,1 +1,1 @@
-# Schibsted-REST-Framework
+REST-Framework
