@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/prism.css" rel="stylesheet" />
+</head>
+  <title>REST Framework</title>
+</head>
+<body>
+  <div class="wrapper">
+    
+    <header>
+      <h2>Schibsted REST framework</h2> 
+      <span>v3.1.1</span>
+    </header>
+    
+    <section class="main-content">
+        <div class="selection">
+          <h1>Advertiser List</h1>    
+          <label for="format-selection">Specify a format for the GET request</label>
+          <!-- I used select tag so option tag styling is mostly native per browser. I could use list instead and style as per given screen, but I prefered semantic html:) -->
+          <select name="" id="format-selection">
+            <option value="json">json</option>
+            <option value="xml">xml</option>
+          </select>
+        </div>
+        <input type="text" class="request-details">
+        <div class="data-outcome">
+          <!-- highlighting nly works when html content is given upfront. It doesn't work when I inject it with JS, something to further analyse -->
+            <pre>
+              <code class="language-json">[
+                {
+                    "id": 1,
+                    "name": "MockAdvertiser",
+                    "external_id": "1",
+                    "impressions": 52721284,
+                    "clicks": 93149
+                }
+            ]
+            </code>
+          </pre>
+        </div>
+    </section>
+  </div>
+
+<script src="js/prism.js"></script>
+<script src="js/DataFetch.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
