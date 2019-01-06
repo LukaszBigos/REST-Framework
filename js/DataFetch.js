@@ -4,6 +4,7 @@
   async get(url, type) {
     const res = await fetch(url);
     let data = '';
+    const dataContainer = document.querySelector('.data-outcome');
 
     switch(type) {
       case 'json': {
@@ -13,7 +14,8 @@
       }
   
       case 'xml': {
-        data = await res.text(); // await doesn't support xml
+        // await doesn't support xml
+        data = await res.text();
         break;
       }
   

@@ -122,11 +122,13 @@ option:checked {
 }
 
 .request-details {
+  display: inline-block;
   margin: 20px 0;
   border: 1px solid #aaa;
   border-radius: 7px;
   padding: 10px 5px;
   width: 100%;
+  min-height: 5vh;
   background-color: #fcf8f8;
 }
 
@@ -141,16 +143,6 @@ option:checked {
   white-space: pre-wrap;
   overflow: overlay;
 }
-
-/* pre {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-code {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-} */
 
 @media (max-width: 568px) {
   header {
