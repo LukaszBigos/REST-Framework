@@ -14,7 +14,7 @@
       }
   
       case 'xml': {
-        // await doesn't support xml
+        // fetch doesn't fully support xml - place for future improvement
         data = await res.text();
         break;
       }
